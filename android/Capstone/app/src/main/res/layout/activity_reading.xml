@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="204dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="90dp"
+        android:background="#FF0000"
+        android:backgroundTint="#F1D674"
+        android:text="독서 종료"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="586dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="34dp"
+        android:background="#E3DDDD"
+        android:text="빈 텍스트"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="238dp"
+        android:background="#FFC107"
+        android:text="진행률"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_width="205dp"
+        android:layout_height="129dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="354dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="600dp"
+        android:layout_height="113dp"
+        android:progressBackgroundTint="#205F7C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="92dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="28dp"
+        android:background="#888585"
+        android:text="말풍선"
+        android:textColor="#263238"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

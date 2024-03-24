@@ -1,0 +1,103 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="157dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="45dp"
+        android:text="삭제"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/modify"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"/>
+
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="351dp"
+        android:layout_marginBottom="45dp"
+        android:text="수정"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/Delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars"/>
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars"/>
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars"/>
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars"/>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="180dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="62dp"
+        android:text="갤러리"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textAllCaps="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
