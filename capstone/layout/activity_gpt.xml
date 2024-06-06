@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="165dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/elapsedTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="독서 시간: 0 분, 0 초"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/textViewGptResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="페이지에 있는 텍스트가 보여지는 공간"
+        android:textIsSelectable="true"
+        android:layout_centerInParent="true"
+        android:textSize="18sp" />
+    <RadioGroup
+        android:id="@+id/radioGroupMode"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_below="@+id/textViewGptResponse"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="549dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="549dp"
+        android:layout_marginBottom="208dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:tag="요약해줘"
+            android:text="요약" />
+
+        <RadioButton
+            android:id="@+id/radioDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="정의해줘"
+            android:text="정의" />
+
+        <RadioButton
+            android:id="@+id/radioTranslation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="번역해줘"
+            android:text="번역" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnScanPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="페이지 스캔"
+        android:layout_below="@id/textViewGptResponse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
